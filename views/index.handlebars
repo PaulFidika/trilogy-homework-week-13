@@ -1,0 +1,25 @@
+<div class="row text-center">
+    <div class="col text-center jumbotron">
+        <h3>Eat the buger!<br></h3>
+        <hr class="my-4">
+        <form action="/api" method="post">
+            <label for="burgerName">Enter your burger's name:</label><br>
+            <input type="text" id="burgerName" name="burgerName" value="" class="form-group col-md-6"><br>
+            <input type="submit" value="Submit" id="submit" class="btn btn-primary mb-2">
+        </form>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col list-group">
+        <h4><b>Burgers To Eat:</b></h4><br>
+        <ul id="toEat"></ul>
+    </div>
+
+    <div class="col list-group">
+        <h4><b>Burgers Already Eaten:</b></h4><br>
+        <ul id="alreadyEaten"></ul>
+    </div>
+</div>
+
+<script src="/js/front-end.js" type="text/javascript"></script>
