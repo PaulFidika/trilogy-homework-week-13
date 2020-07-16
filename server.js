@@ -27,7 +27,7 @@ app.use('/', require('./routes/html-routes'));
 app.use('/api', require('./routes/api-routes'));
 
 // test the database
-db.sequelize.authenticate()
+db.sequelize.sync()
     .then(() => {
         console.log('Database connected...');
         app.listen(PORT, console.log(`Server started on http://localhost:${PORT}`));
